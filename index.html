@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Podcaster</title>
 </head>
@@ -26,8 +29,13 @@
     </aside>
     <main>
         <div class="toolbar">
-            <label for="filter">Filter</label>
-            <input type="search" id="filter" name="filter" placeholder="Filter podcasts">
+            <label for="filter" class="visually-hidden">Filter</label>
+            <select id="filter" name="filter"></select>
+                <option value="">Filter...</option>
+                <option value="tech">Tecnología</option>
+                <option value="humor">Humor</option>
+                <option value="cine">Cine</option>
+            </select>
         </div>
         <section class="shelves">
             <ul class="shelf">
